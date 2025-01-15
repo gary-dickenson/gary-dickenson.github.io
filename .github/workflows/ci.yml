@@ -47,7 +47,7 @@ jobs:
         run: yarn set version 4.6.0
 
       - name: Install Dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache --check-cache
 
       - name: Build
         run: yarn build
