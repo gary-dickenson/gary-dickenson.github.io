@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 
 .idea/
+.yarnrc.yml
 .yarn/cache/
 .yarn/install-state.gz
