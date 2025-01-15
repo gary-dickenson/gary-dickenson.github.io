@@ -37,6 +37,9 @@ jobs:
 #           restore-keys: |
 #             ${{ runner.os }}-yarn-
 
+      - name: Clean YUarn Cache Corepack
+        run: yarn cache clean
+
       - name: Enable Corepack
         run: corepack enable
 
