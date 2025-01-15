@@ -1,0 +1,87 @@
+@use "variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  --maxWidth: 1284px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: variables.$primaryFont;
+  background-color: variables.$primaryBackgroundColor;
+  color: variables.$primaryColor;
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+.container {
+  margin: auto;
+  max-width: 100vw;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+@media only screen and (min-device-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-device-width: 480px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-device-width: 640px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-device-width: 960px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  html {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  /* big landscape tablets, laptops */
+  html {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) {
+  /* desktops */
+  .container {
+    max-width: 50vw;
+  }
+}
+
+@media only screen and (min-device-width: 3840px) {
+  /* hi-res laptops and desktops up to 4k TV's*/
+}

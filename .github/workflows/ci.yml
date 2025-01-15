@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build
+
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+      pages: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.15.0
+
+#       - name: Get yarn cache
+#         id: yarn-cache
+#         run: echo "YARN_CACHE_DIR=$(yarn cache dir)" >> "${GITHUB_OUTPUT}"
+#
+#       - name: Cache dependencies
+#         uses: actions/cache@v3
+#         with:
+#           path: ${{ steps.yarn-cache.outputs.YARN_CACHE_DIR }}
+#           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+#           restore-keys: |
+#             ${{ runner.os }}-yarn-
+
+      - name: Install Dependencies
+        run: yarn install --immutable
+
+      - name: Build
+        run: yarn build
+
+      - name: Print Folder Tree
+        uses: jaywcjlove/github-action-folder-tree@main
+        with:
+          path: ./dist
+          depth: 5
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4.6.0
+        with:
+          name: production-files
+          path: ./dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-22.04
+    if: github.ref == 'refs/heads/master'
+
+    permissions:
+      contents: write
+      pages: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+
+    steps:
+      - name: Downloading artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: production-files
+          path: ./dist
+
+#       - name: Deploy
+#         run: yarn deploy
+#         env:
+#           GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gary-dickenson.github.io

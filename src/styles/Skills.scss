@@ -1,0 +1,21 @@
+@use 'variables.scss';
+
+.skill-title {
+  font-family: variables.$primaryFont;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.skills-container hr {
+  background: variables.$secondaryColor;
+  height: 1px;
+  border: none;
+}
+
+.skills-container {
+  white-space: nowrap;
+}
+
+.can-pause.skills-container:hover {
+  cursor: url('/public/assets/images/pause.png'), auto;
+}
