@@ -40,8 +40,10 @@ jobs:
       - name: Install Dependencies
         run: yarn install --immutable
 
-      - name: Build
+      - name: Enable Corepack
         run: corepack enable
+
+      - name: Build
         run: yarn build
 
       - name: Print Folder Tree
