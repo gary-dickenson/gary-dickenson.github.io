@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Enable Corepack
         run: corepack enable
@@ -27,6 +27,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22.13.0
+          cache: 'yarn'
 
 #       - name: Get yarn cache
 #         id: yarn-cache
@@ -47,7 +48,7 @@ jobs:
         run: yarn set version 4.6.0
 
       - name: Install Dependencies
-        run: yarn install --immutable --immutable-cache --check-cache
+        run: yarn install --immutable
 
       - name: Build
         run: yarn build
