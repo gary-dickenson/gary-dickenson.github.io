@@ -44,8 +44,8 @@ jobs:
       - name: Install Yarn
         run: corepack prepare yarn@4.6.0 --activate
 
-      - name: Activate Yarn
-        run: yarn set version 4.6.0
+#       - name: Activate Yarn
+#         run: yarn set version 4.6.0
 
       - name: Install Dependencies
         run: yarn install
