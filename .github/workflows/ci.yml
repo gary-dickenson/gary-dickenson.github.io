@@ -50,6 +50,11 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
+      - name: Output NODE_ENV
+        shell: bash
+        run: |
+          echo "NODE_ENV: $NODE_ENV"
+
       - name: Build
         run: yarn build
 
