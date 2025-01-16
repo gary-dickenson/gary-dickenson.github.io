@@ -89,11 +89,6 @@ jobs:
           name: production-files
           path: ./dist
 
-#       - name: Deploy
-#         run: yarn deploy
-#         env:
-#           GH_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
