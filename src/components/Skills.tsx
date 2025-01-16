@@ -12,19 +12,21 @@ const yearsExperience = () => {
 
 const data = [
   { id: 1, title: ['Over ' + yearsExperience() + ' Years Experience'] },
-  { id: 12, title: 'Full Stack Development' },
+  { id: 2, title: 'Full Stack Development' },
   // { id: 16, title: 'Cloud Infrastructure Management' },
-  { id: 5, title: 'Microservices' },
-  { id: 9, title: "RESTful Web API's" },
-  { id: 7, title: 'Systems Integration' },
+  { id: 3, title: 'Microservices' },
+  { id: 4, title: "Collaboration" },
+  { id: 5, title: "RESTful Web API's" },
+  { id: 6, title: 'Systems Integration' },
   { id: 7, title: 'Application Design' },
-  { id: 8, title: 'Containerisation' },
+  { id: 8, title: 'Lean Code' },
+  { id: 9, title: 'Containerisation' },
   { id: 10, title: "Reactive Programming" },
   { id: 11, title: 'Automation' },
-  { id: 7, title: 'Continuous Delivery' },
-  // { id: 20, title: 'Amazon Web Services' },
-  // { id: 20, title: 'Monitoring' },
-  // { id: 20, title: 'Metrics' },
+  { id: 12, title: 'Continuous Delivery' },
+  // { id: 13, title: 'Amazon Web Services' },
+  // { id: 14, title: 'Monitoring' },
+  // { id: 15, title: 'Metrics' },
 ]
 
 export default ({ keySkills = data }) => {
