@@ -1056,6 +1056,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-gtm-module@npm:^2":
+  version: 2.0.4
+  resolution: "@types/react-gtm-module@npm:2.0.4"
+  checksum: 10/635699a2d85f958ba92126cda851f9a1b46df75d3846bdc89ce2345524f73d889a266110d00492f6c23e9e42e70ec2246449a93c9cc2c6367bd643a7d2f0e88a
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:^18.3.18":
   version: 18.3.18
   resolution: "@types/react@npm:18.3.18"
@@ -1926,6 +1933,7 @@ __metadata:
     "@react-spring/web": "npm:^9.7.5"
     "@types/react": "npm:^18.3.18"
     "@types/react-dom": "npm:^18.3.5"
+    "@types/react-gtm-module": "npm:^2"
     "@vitejs/plugin-react": "npm:^4.3.4"
     "@vitejs/plugin-react-refresh": "npm:^1.3.6"
     corepack: "npm:^0.30.0"
@@ -1936,7 +1944,7 @@ __metadata:
     react: "npm:^18.3.1"
     react-device-detect: "npm:^2.2.3"
     react-dom: "npm:^18.3.1"
-    react-ga4: "npm:^2.1.0"
+    react-gtm-module: "npm:^2.0.11"
     react-router-dom: "npm:^7.1.1"
     sass: "npm:^1.83.4"
     typescript: "npm:~5.6.2"
@@ -2671,10 +2679,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-ga4@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "react-ga4@npm:2.1.0"
-  checksum: 10/e47edd040b7a272d35df732e08c4a8b6b14add659db04fb81a3a2cbde59bf34dc6eae9e0b8b4abd8937d11c837954773a6ba86feb2c605e5eb916f4c99e420c7
+"react-gtm-module@npm:^2.0.11":
+  version: 2.0.11
+  resolution: "react-gtm-module@npm:2.0.11"
+  checksum: 10/231dbe4b7c5fbb2577d5bcb7f90ab369a2b55359815633223a03d361775ad52d0eda23d0dbf35f357424d5c4b76f32320fa41ad538e6017a64e258b437d10795
   languageName: node
   linkType: hard
 
