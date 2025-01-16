@@ -48,7 +48,7 @@ jobs:
         run: yarn set version 4.6.0
 
       - name: Install Dependencies
-        run: yarn install --immutable
+        run: yarn install
 
       - name: Build
         run: yarn build
