@@ -7,6 +7,7 @@ const Home = React.lazy(() => import('./components/Home'))
 const About = React.lazy(() => import('./components/About'))
 
 export const App = () => {
+
   return <React.Suspense fallback={<p>Loading</p>}>
     <Router>
       <Layout>
