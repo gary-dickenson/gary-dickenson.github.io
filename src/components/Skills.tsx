@@ -13,7 +13,6 @@ const yearsExperience = () => {
 const data = [
   { id: 1, title: ['Over ' + yearsExperience() + ' Years Experience'] },
   { id: 2, title: 'Full Stack Development' },
-  // { id: 16, title: 'Cloud Infrastructure Management' },
   { id: 3, title: 'Microservices' },
   { id: 4, title: "Collaboration" },
   { id: 5, title: "RESTful Web API's" },
@@ -24,9 +23,6 @@ const data = [
   { id: 10, title: "Reactive Programming" },
   { id: 11, title: 'Automation' },
   { id: 12, title: 'Continuous Delivery' },
-  // { id: 13, title: 'Amazon Web Services' },
-  // { id: 14, title: 'Monitoring' },
-  // { id: 15, title: 'Metrics' },
 ]
 
 export default ({ keySkills = data }) => {
