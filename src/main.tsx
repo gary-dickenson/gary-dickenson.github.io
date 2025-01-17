@@ -5,13 +5,14 @@ import { App } from './App.tsx'
 import ReactGA from 'react-ga4';
 import TagManager from 'react-gtm-module'
 
-export const TRACKING_ID = "G-J5PBBJW7CH"
+export const TAG_MANAGER_TRACKING_ID = 'GTM-W7NS2KDV'
+export const ANALYTICS_TRACKING_ID = 'G-J5PBBJW7CH'
 
 const tagManagerArgs = {
-  gtmId: TRACKING_ID
+  gtmId: TAG_MANAGER_TRACKING_ID
 }
 
-ReactGA.initialize(TRACKING_ID);
+ReactGA.initialize(ANALYTICS_TRACKING_ID);
 TagManager.initialize(tagManagerArgs)
 
 createRoot(document.getElementById('root')!).render(
