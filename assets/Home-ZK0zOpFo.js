@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Skills-DPgCGWAT.js","assets/index-BgonFX5X.js","assets/index-DvhXL4o-.css","assets/Skills-wHTERI3Y.css"])))=>i.map(i=>d[i]);
-import{r as t,R as e,T as s,j as a,a as i,_ as r}from"./index-BgonFX5X.js";const o=i.lazy(()=>r(()=>import("./Skills-DPgCGWAT.js"),__vite__mapDeps([0,1,2,3])));function c(){return t.useEffect(()=>{e.initialize(s),e.send({hitType:"pageview",page:"/",title:"Home Page"})},[]),a.jsx("div",{className:"home-container",children:a.jsx(o,{})})}export{c as default};
