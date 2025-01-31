@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/Skills-Bnv73iwC.js","assets/index-CVSy2PN0.js","assets/index-DvhXL4o-.css","assets/Skills-wHTERI3Y.css"])))=>i.map(i=>d[i]);
+import{r as t,R as e,A as s,j as a,a as i,_ as r}from"./index-CVSy2PN0.js";const o=i.lazy(()=>r(()=>import("./Skills-Bnv73iwC.js"),__vite__mapDeps([0,1,2,3])));function _(){return t.useEffect(()=>{e.initialize(s),e.send({hitType:"pageview",page:"/",title:"Home Page"})},[]),a.jsx("div",{className:"home-container",children:a.jsx(o,{})})}export{_ as default};
