@@ -17,12 +17,13 @@ const data = [
   { id: 4, title: "Collaboration" },
   { id: 5, title: "RESTful Web API's" },
   { id: 6, title: 'Systems Integration' },
-  { id: 7, title: 'Application Design' },
-  { id: 8, title: 'Lean Code' },
-  { id: 9, title: 'Containerisation' },
-  { id: 10, title: "Reactive Programming" },
-  { id: 11, title: 'Automation' },
-  { id: 12, title: 'Continuous Delivery' },
+  { id: 7, title: 'Infrastructure as Code' },
+  { id: 8, title: 'Application Design' },
+  { id: 9, title: 'Lean Code' },
+  { id: 10, title: 'Containerisation' },
+  { id: 11, title: "Reactive Programming" },
+  { id: 12, title: 'Automation' },
+  { id: 13, title: 'Continuous Integration & Delivery' },
 ]
 
 export default ({ keySkills = data }) => {
